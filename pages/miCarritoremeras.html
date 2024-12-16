@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet" />
+		<!--<link rel="stylesheet" href="public/bundle.css" />-->
+		<link rel="stylesheet" href="/css/estilos.css" />
+		<script src="/public/bundle.js" defer></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<title>Página de Tienda</title>
+	</head>
+	<body>
+		<div class="contenedor">
+			<header class="header">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="container-fluid">
+						<div id="logo">
+							<a href="#"><img src="/img/converse_log.jpeg" alt="Logo Converse" class="logo"></a>
+						</div>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarText">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<!--<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+						</li>-->
+						<li class="nav-item">
+							<a class="nav-link" href="/index.html#productos">Productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="miCarritotennis.html">Tennis</a>
+						</li>
+						<!--<li class="nav-item">
+							<a class="nav-link" href="index.html#contacto">Contacto</a>
+						</li> -->
+						<li class="nav-item">
+							<a href="#" class="nav-link" data-accion="abrir-carrito">Mi Carrito</a>
+							<!--<a class="nav-link" href="#">Mi Carrito</a>-->
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Mi Cuenta</a>
+						</li>
+						</ul>
+						<span class="navbar-text">
+						"Somos mucho más que lo que la gente usa"
+						</span>
+					</div>
+				</nav>
+			
+					
+			</header>
+			<main>
+				<!--<div class="breadcrumbs">
+					<a href="index.html" class="breadcrumbs__link">Inicio</a>
+					<div class="breadcrumbs__separador">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="currentColor"
+							viewBox="0 0 16 16"
+							class="breadcrumbs__svg"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+							/>
+						</svg>
+					</div>
+					<a href="index.html#productos" class="breadcrumbs__link">Tennis</a>
+					<div class="breadcrumbs__separador">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="currentColor"
+							viewBox="0 0 16 16"
+							class="breadcrumbs__svg"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+							/>
+						</svg>
+					</div>
+					<p href="/" class="breadcrumbs__active">Converse</p>-->
+					<!--<button id="btn-tennis">Tennis</button>
+					<button id="btn-remeras">Remeras</button>-->
+				</div>
+
+				<!--TENNIS
+			
+				<div id="producto" class="producto" data-producto-id="1">
+					<div class="producto__thumbs">
+						<img src="./img/thumbs/negro.jpg" alt="" class="producto__thumb-img" />
+						<img src="./img/thumbs/rojo.jpg" alt="" class="producto__thumb-img" />
+						<img src="./img/thumbs/amarillo.jpg" alt="" class="producto__thumb-img" />
+					</div>
+					<div class="producto__contenedor-imagen">
+						<img src="./img/tennis/negro.jpg" alt="" class="producto__imagen" />
+					</div>
+					<div class="producto__contenedor-info">
+						<div class="producto__estrellas">
+							<div class="producto__estrella">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="bi bi-star-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+									/>
+								</svg>
+							</div>
+							<div class="producto__estrella">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="bi bi-star-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+									/>
+								</svg>
+							</div>
+							<div class="producto__estrella">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="bi bi-star-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+									/>
+								</svg>
+							</div>
+							<div class="producto__estrella">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="bi bi-star-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+									/>
+								</svg>
+							</div>
+							<div class="producto__estrella">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="bi bi-star-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+									/>
+								</svg>
+							</div>
+						</div>
+						<h1 class="producto__nombre">Tennis Converse Standard.</h1>
+						<p class="producto__descripcion">ESTILO ICÓNICO. ARTESANÍA EXCEPCIONAL. CHUCK 70...</p>
+						<div class="producto__contenedor-propiedad">
+							<p class="producto__propiedad">Precio</p>
+							<p class="producto__precio">$125000.00</p>
+						</div>
+						<div class="producto__contenedor-propiedad" id="propiedad-color">
+							<p class="producto__propiedad">Color</p>
+							<div class="producto__contenedor-radios">
+								<label for="negro">
+									<input
+										type="radio"
+										class="producto__radio-input"
+										name="color"
+										id="negro"
+										value="negro"
+										checked
+									/>
+									<p
+										class="producto__radio-texto producto__radio-texto--color producto__radio-texto--negro"
+									>
+										Negro
+									</p>
+								</label>
+								<label for="rojo">
+									<input
+										type="radio"
+										class="producto__radio-input"
+										name="color"
+										id="rojo"
+										value="rojo"
+									/>
+									<p
+										class="producto__radio-texto producto__radio-texto--color producto__radio-texto--rojo"
+									>
+										Rojo
+									</p>
+								</label>
+								<label for="amarillo">
+									<input
+										type="radio"
+										class="producto__radio-input"
+										name="color"
+										id="amarillo"
+										value="amarillo"
+									/>
+									<p
+										class="producto__radio-texto producto__radio-texto--color producto__radio-texto--amarillo"
+									>
+										Amarillo
+									</p>
+								</label>
+							</div>
+						</div>
+						<div class="producto__contenedor-propiedad" id="propiedad-tamaño">
+							<p class="producto__propiedad">Tamaño</p>
+							<div class="producto__contenedor-radios">
+								<label for="39">
+									<input
+										type="radio"
+										class="producto__radio-input"
+										name="tamaño"
+										id="39"
+										value="39"
+										checked
+									/>
+									<p class="producto__radio-texto">39</p>
+								</label>
+								<label for="40">
+									<input type="radio" class="producto__radio-input" name="tamaño" id="40" value="40" />
+									<p class="producto__radio-texto">40</p>
+								</label>
+								<label for="41">
+									<input
+										type="radio"
+										class="producto__radio-input"
+										name="tamaño"
+										id="41"
+										value="41"
+									/>
+									<p class="producto__radio-texto">41</p>
+								</label>
+								<label for="42">
+									<input type="radio" class="producto__radio-input" name="tamaño" id="42" value="42" />
+									<p class="producto__radio-texto">42</p>
+								</label>
+								<label for="43">
+									<input
+										type="radio"
+										class="producto__radio-input"
+										name="tamaño"
+										id="43"
+										value="43"
+									/>
+									<p class="producto__radio-texto">43</p>
+								</label>
+								<label for="44">
+									<input type="radio" class="producto__radio-input" name="tamaño" id="44" value="44" />
+									<p class="producto__radio-texto">44</p>
+								</label>
+							</div>
+						</div>
+						<div class="producto__contenedor-propiedad">
+							<p class="producto__propiedad">Cantidad</p>
+							<button class="producto__btn-cantidad" id="disminuir-cantidad">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									viewBox="0 0 16 16"
+								>
+									<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+								</svg>
+							</button>
+							<input type="text" id="cantidad" value="1" class="producto__cantidad" />
+							<button class="producto__btn-cantidad" id="incrementar-cantidad">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+									/>
+								</svg>
+							</button>
+						</div>
+						--BOTON AGREGAR AL CARRITO--
+						<button type="submit" class="producto__btn-carrito" id="agregar-al-carrito">
+							Agregar al carrito
+						</button>
+					</div>-->
+				</div>
+			
+			
+			<!--REMERAS-->
+			
+				<div id="producto" class="producto"  data-producto-id="2" >
+					<div class="producto__thumbs">
+						<img src="../img/thumbs/blanco.jpg" alt="" class="producto__thumb-img" />
+						<img src="../img/thumbs/naranja.jpg" alt="" class="producto__thumb-img" />
+						<img src="../img/thumbs/verde.jpg" alt="" class="producto__thumb-img" />
+					</div>
+					<div class="producto__contenedor-imagen">
+						<img src="../img/tennis/blanco.jpg" alt="" class="producto__imagen" />
+					</div>
+					<div class="producto__contenedor-info">
+						<div class="producto__estrellas">
+							<div class="producto__estrella">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="bi bi-star-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+									/>
+								</svg>
+							</div>
+							<div class="producto__estrella">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="bi bi-star-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+									/>
+								</svg>
+							</div>
+							<div class="producto__estrella">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="bi bi-star-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+									/>
+								</svg>
+							</div>
+							<div class="producto__estrella">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="bi bi-star-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+									/>
+								</svg>
+							</div>
+							<div class="producto__estrella">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="bi bi-star-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+									/>
+								</svg>
+							</div>
+						</div>
+						<h1 class="producto__nombre">Remera Converse.</h1>
+						<p class="producto__descripcion">Patch Tee Suave Algodon.</p>
+						<div class="producto__contenedor-propiedad">
+							<p class="producto__propiedad">Precio</p>
+							<p class="producto__precio">$65000.00</p>
+						</div>
+						<div class="producto__contenedor-propiedad" id="propiedad-color">
+							<p class="producto__propiedad">Color</p>
+							<div class="producto__contenedor-radios">
+								<label for="blanco">
+									<input 
+									type="radio" 
+									class="producto__radio-input" 
+									name="color" 
+									id="blanco" 
+									value="blanco"
+									checked
+									/>
+									<p class="producto__radio-texto producto__radio-texto--color producto__radio-texto--blanco">
+										Blanco
+									</p>
+								</label>
+								
+								<label for="verde">
+									<input type="radio" class="producto__radio-input" name="color" id="verde" value="verde">
+									<p class="producto__radio-texto producto__radio-texto--color producto__radio-texto--verde">
+										Verde
+									</p>
+								</label>
+								
+								<label for="naranja">
+									<input type="radio" class="producto__radio-input" name="color" id="naranja" value="naranja">
+									<p class="producto__radio-texto producto__radio-texto--color producto__radio-texto--naranja">
+										Naranja
+									</p>
+								</label>
+								
+							</div>
+						</div>
+						<div class="producto__contenedor-propiedad" id="propiedad-tamaño">
+							<p class="producto__propiedad">Tamaño</p>
+							<div class="producto__contenedor-radios">
+								<label for="S">
+									<input
+										type="radio"
+										class="producto__radio-input"
+										name="tamaño"
+										id="S"
+										value="S"
+										checked
+									/>
+									<p class="producto__radio-texto">S</p>
+								</label>
+								<label for="M">
+									<input 
+										type="radio" 
+										class="producto__radio-input" 
+										name="tamaño" 
+										id="M" 
+										value="M" 
+									/>
+									<p class="producto__radio-texto">M</p>
+								</label>
+								<label for="L">
+									<input
+										type="radio"
+										class="producto__radio-input"
+										name="tamaño"
+										id="L"
+										value="L"
+									/>
+									<p class="producto__radio-texto">L</p>
+								</label>
+								<label for="XL">
+									<input 
+										type="radio" 
+										class="producto__radio-input" 
+										name="tamaño" 
+										id="XL" 
+										value="XL" />
+									<p class="producto__radio-texto">XL</p>
+								</label>
+							</div>
+						</div>
+						<div class="producto__contenedor-propiedad">
+							<p class="producto__propiedad">Cantidad</p>
+							<button class="producto__btn-cantidad" id="disminuir-cantidad">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									viewBox="0 0 16 16"
+								>
+									<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+								</svg>
+							</button>
+							<input type="text" id="cantidad" value="1" class="producto__cantidad" />
+							<button class="producto__btn-cantidad" id="incrementar-cantidad">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+									/>
+								</svg>
+							</button>
+							<span>Stock: <span id="stock-actual">3</span></span>
+						</div>
+						<button type="submit" class="producto__btn-carrito" id="agregar-al-carrito">
+							Agregar al carrito
+						</button>
+					</div>
+				</div>
+		</main>
+		
+	</div>
+	<!--NOTIFICACION DE PROD AGREGADO AL CARRITO-->
+	<div class="notificacion" id="notificacion">
+		<p class="notificacion__titulo">Agregado al carrito</p>
+		<img src="./img/thumbs/1.jpg" alt="" class="notificacion__thumb" />
+		<a href="#" class="notificacion__link" data-accion="abrir-carrito">Ver carrito</a>
+	</div>
+
+	<!--CUERPO DEL CARRITO-->
+	<div class="carrito" id="carrito">
+		<div class="carrito__overlay">
+			<div class="carrito__contenedor">
+				<div class="carrito__header">
+					<h4 class="carrito__titulo">Carrito</h4>
+					<button class="carrito__btn-cerrar" data-accion="cerrar-carrito">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"
+							/>
+						</svg>
+					</button>
+				</div>
+				<div class="carrito__body">
+					<p class="carrito__aviso-sin-productos">No hay productos en tu carrito.</p>				<!-- <div class="carrito__producto">
+						<div class="carrito__producto-info">
+							<img src="./img/tennis/1.jpg" alt="" class="carrito__thumb" />
+							<div>
+								<p class="carrito__producto-nombre">
+									<span class="carrito__producto-cantidad">1 x </span>Lorem Ipsum Dolot Asimmet
+								</p>
+								<p class="carrito__producto-propiedades">
+									Tamaño:<span>2,5</span> Color:<span>Rojo</span>
+								</p>
+							</div>
+						</div>
+						<div class="carrito__producto-contenedor-precio">
+							<button class="carrito__btn-eliminar-item" data-accion="eliminar-item-carrito">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"
+									/>
+								</svg>
+							</button>
+							<p class="carrito__producto-precio">$500.00</p>
+						</div>
+					</div> -->
+				</div>
+				<div class="carrito__footer">
+					<div class="carrito__contenedor-total">
+						<div>
+							<p class="carrito__label">SubTotal:</p>
+							<p class="carrito__subtotal">$0.00</p>
+							<p class="carrito__label">Descuento 5%:</p>
+							<p class="carrito__descuento">$0.00</p>
+							<p class="carrito__label">Iva (21%):</p>
+							<p class="carrito__iva">$0.00</p>
+							<p class="carrito__label">Total:</p>
+							<p class="carrito__total">$0.00</p>
+						</div>
+						<div class="carrito__contenedor-botones">
+							<button class="carrito__btn-comprar" id="carrito__btn-comprar">Comprar</button>
+							<button class="carrito__btn-regresar" data-accion="cerrar-carrito">Regresar a la tienda</button>
+						</div>
+						<!--<button class="carrito__btn-comprar" id="carrito__btn-comprar">Comprar</button>
+						<div class="carrito__contenedor-btn-regresar" data-accion="cerrar-carrito">
+							<button class="carrito__btn-regresar">Regresar a la tienda</button>
+						</div>-->
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!--<script type="module" src="public/bundle.js"></script>-->
+	<!--<script src="public/bundle.js"></script>-->
+	</body>
+</html>

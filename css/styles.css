@@ -1,0 +1,325 @@
+/* Estilo básico y fuente */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sofia Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+}
+
+main {
+    background-color: #E1E2E4;
+}
+header {
+    background-color: #E1E2E4;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+header .logo {
+    max-width: 75%; /* El logo no se expandirá más allá del ancho del contenedor */
+    height: auto; /* Mantiene la proporción del logo */
+    border-radius: 8px; /* Opcional: le da bordes redondeados */
+}
+
+
+.bg-light {
+    background-color: #f8f9fa !important;
+    border-radius: 10px;
+}
+/*nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+} }*/
+
+/* Estilo de las secciones */
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    /*text-align: center;*/
+    padding: 1em;
+}
+
+
+/* Estilo para centrar el video y hacerlo responsivo */
+#inicio {
+    text-align: center; /* Centra el contenido dentro de la sección */
+    padding: 20px;
+}
+
+#inicio h2 {
+    text-align: left; /* Alinea el texto "Inicio" a la izquierda */
+}
+#inicio video {
+    max-width: 100%; /* El video no se expandirá más allá del ancho del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+    border-radius: 8px; /* Opcional: le da bordes redondeados */
+}
+
+/* Estilo para los íconos de redes sociales */
+.icono-red-social {
+    font-size: 1rem; /* Tamaño más grande para los iconos */
+    margin: 0 10px; /* Espaciado entre los íconos */
+}
+
+.fa-solid fa-house {
+    text-align: right; /* Centra el contenido dentro de la sección */
+    padding: 20px;
+    }
+
+/* Opcional: Para centrar el contenido del footer */
+footer nav {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Añadir padding para que en pantallas más grandes no quede pegado a los bordes */
+@media (min-width: 768px) {
+    #inicio video {
+        width: 80%; /* En pantallas grandes el video ocupará el 80% del contenedor */
+    }
+}
+
+#productos {
+    background-color: #E1E2E4;; /* Fondo blanco para el encabezado de la sección */
+    border-radius: 18px; /* Opcional: le da bordes redondeados */
+    
+}
+
+.productos-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.producto-card {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    /*max-width: 300px;  Limita el ancho de las tarjetas para que no se expandan demasiado */
+}
+
+.producto-card img {
+    max-width: 100%; /* Asegura que las imágenes no se desborden del contenedor */
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Reseñas */
+.reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+
+.reseña-item {
+    text-align: left;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;   
+}
+
+.reseña__foto {
+	    
+	vertical-align: top;
+	height: 65px;
+	width: 65px;
+}
+
+
+.reseña__fecha {
+    text-align: left;
+	color: #585858;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.reseña__estrellas {
+	display: flex;
+	gap: 10px;
+	color: #049aef;
+	margin-bottom: 10px;
+}
+
+.reseña__estrella {
+	width: 10px;
+	height: 10px;
+}
+
+.reseña__estrella svg {
+	width: 100%;
+	height: 100%;
+}
+
+/* Formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #0014dc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo del tooltip */
+.product-tooltip {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%; /* Aparece debajo de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    width: 180px;
+    text-align: left;
+}
+
+/* Mostrar el tooltip al pasar el mouse por la imagen */
+.producto-card:hover .product-tooltip {
+    display: block;
+}
+
+.producto-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+.producto-card.animacion-entrada {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos básicos para las tarjetas */
+.producto-card {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+
+
+
+
+
+/* ---- MEDIA QUERIES ---- */
+
+/* Smart Phone (max-width: 600px) */
+@media (max-width: 384px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .productos-container {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .icono-red-social {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tableta (min-width: 601px) and (max-width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .productos-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #inicio video {
+        width: 80%;
+    }
+}
+
+/* PC de escritorio (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .productos-container {
+        flex-direction: row;
+    }
+
+    #inicio video {
+        width: 70%;
+    }
+
+    nav ul li a {
+        font-size: 26px;
+    }
+}
+
+
+/* Responsivo 
+@media (max-width: 768px) {
+    .productos-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+    }
+} 
+*/

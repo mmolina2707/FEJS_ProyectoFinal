@@ -1,0 +1,272 @@
+[
+    {
+        "id":1,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Amarilla",
+        "talla":39,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":2,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Amarilla",
+        "talla":40,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":3,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Amarilla",
+        "talla":41,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":4,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Amarilla",
+        "talla":42,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":5,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Amarilla",
+        "talla":43,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":6,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Amarilla",
+        "talla":44,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":7,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Negra",
+        "talla":39,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":8,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Negra",
+        "talla":40,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":9,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Negra",
+        "talla":41,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":10,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Negra",
+        "talla":42,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":11,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Negra",
+        "talla":43,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":12,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Negra",
+        "talla":44,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":13,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Roja",
+        "talla":39,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":14,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Roja",
+        "talla":40,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":15,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Roja",
+        "talla":41,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":16,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Roja",
+        "talla":42,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":17,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Roja",
+        "talla":43,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":18,
+        "nombre":"Tennis Converse Estandar",
+        "descripcion":"Tennis Converse Estandar ESTILO ICONICO. ARTESANIA EXCEPCIONAL. CHUCK 70\u2026",
+        "color":"Roja",
+        "talla":44,
+        "stock":6,
+        "precio":125000
+    },
+    {
+        "id":19,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Blanca",
+        "talla":"S",
+        "stock":6,
+        "precio":65000
+    },
+    {
+        "id":20,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Blanca",
+        "talla":"M",
+        "stock":6,
+        "precio":65000
+    },
+    {
+        "id":21,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Blanca",
+        "talla":"L",
+        "stock":6,
+        "precio":65000
+    },
+    {
+        "id":22,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Blanca",
+        "talla":"XL",
+        "stock":6,
+        "precio":65000
+    },
+    {
+        "id":23,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Verde",
+        "talla":"S",
+        "stock":6,
+        "precio":65000
+    },
+    {
+        "id":24,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Verde",
+        "talla":"M",
+        "stock":6,
+        "precio":65000
+    },
+    {
+        "id":25,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Verde",
+        "talla":"L",
+        "stock":6,
+        "precio":65000
+    },
+    {
+        "id":26,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Verde",
+        "talla":"XL",
+        "stock":6,
+        "precio":65000
+    },
+    {
+        "id":27,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Naranja",
+        "talla":"S",
+        "stock":6,
+        "precio":65000
+    },
+    {
+        "id":28,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Naranja",
+        "talla":"M",
+        "stock":6,
+        "precio":65000
+    },
+    {
+        "id":29,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Naranja",
+        "talla":"L",
+        "stock":6,
+        "precio":65000
+    },
+    {
+        "id":30,
+        "nombre":"Remera Converse",
+        "descripcion":"Remera Converse PATCH TEE SUAVE ALGODON...",
+        "color":"Naranja",
+        "talla":"XL",
+        "stock":6,
+        "precio":65000
+    }
+]
