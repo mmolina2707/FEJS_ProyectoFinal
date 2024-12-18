@@ -4,9 +4,9 @@ const data = {
 	  {
 		id: '1',
 		nombre: 'Tennis Converse Standard',
-		descripcion: 'Consectetur adipisicing elit.',
+		descripcion: 'ESTILO ICÓNICO. ARTESANÍA EXCEPCIONAL. CHUCK 70...',
 		precio: 125000.0,
-		descuento: 0.5,
+		descuento: 0.05,
 		colores: ['negro', 'rojo', 'amarillo'],
 		tamaños: ['39', '40', '41', '42', '43', '44'],
 		stock: {
@@ -18,9 +18,9 @@ const data = {
 	  {
 		id: '2',
 		nombre: 'Remera Converse Standard',
-		descripcion: 'Consectetur adipisicing elit.',
+		descripcion: 'Patch Tee Suave Algodon.',
 		precio: 65000.0,
-		descuento: 0.5,
+		descuento: 0.1,
 		colores: ['blanco', 'verde', 'naranja'],
 		tamaños: ['S', 'M', 'L', 'XL'],
 		stock: {
@@ -124,6 +124,7 @@ const renderCarrito = () => {
 
     let total = 0;
     let subtotal = 0;
+	let descprod = 0;
     let descuento = 0;
     let iva = 0;
 
@@ -142,6 +143,8 @@ const renderCarrito = () => {
             if (productoEstado) {
                 // Obtener el precio correcto del producto desde la lista original
                 const productoLista = data.productos.find(p => p.id === productoCarrito.id);
+				console.log(productoLista)
+				console.log(productoLista.descuento)
                 if (productoLista) {
                     productoCarrito.precio = productoLista.precio;
                 }
@@ -151,9 +154,15 @@ const renderCarrito = () => {
 
                 // Calcular precios
                 subtotal += productoCarrito.precio * productoCarrito.cantidad;
-                descuento = 0.05 * subtotal;
+				descprod = productoCarrito.precio * productoCarrito.cantidad * productoLista.descuento;
+				console.log(productoCarrito)
+				console.log(productoCarrito.descuento)
+                descuento += descprod;
+				
                 iva = 0.21 * (subtotal - descuento);
-                total = subtotal - descuento + iva;
+               
+				total = subtotal - descuento + iva;
+		
 
                 // Crear el contenido del producto
                 let thumbSrc = `../img/thumbs/${productoCarrito.color}.jpg`;
@@ -169,7 +178,10 @@ const renderCarrito = () => {
                                 Id:<span>${productoCarrito.id}</span>
                                 Tamaño:<span>${productoCarrito.tamaño}</span>
                                 Color:<span>${productoCarrito.color}</span>
-                                Stock:<span>${stockActual}</span>
+								Stock:<span>${stockActual}</span>
+                            </p>
+							<p class="carrito__producto-propiedades">
+                                Desc. ${(productoLista.descuento * 100).toFixed(0)}%:<span>${formatearMoneda.format(descprod)}</span>
                             </p>
                         </div>
                     </div>
@@ -333,11 +345,24 @@ btnAgregarAlCarrito.addEventListener('click', () => {
 
 	// Validar stock, si el producto no tiene stock retorna
 	console.log(producto_stock)
-    if (producto_stock <= 0) {
+    /*if (producto_stock <= 0) {
         alert('¡Producto agotado!');
         console.log(producto_stock)
 		return;
-    }
+    }*/
+	
+	if (producto_stock <= 0) {
+		alert('¡Producto agotado!');
+		console.log(producto_stock);
+		return; // Finaliza la ejecución si no hay stock
+	} else {
+		if (producto_stock < cantidad) {
+			alert('¡Stock Insuficiente!');
+			console.log(producto_stock);
+			return; // Finaliza la ejecución si el stock es insuficiente
+		}
+	}
+	
 	
 	// si el  producto ya esta en el carrito, asi que solo aumentamos la cantidad.
 	carrito.forEach((item) => {
@@ -352,16 +377,13 @@ btnAgregarAlCarrito.addEventListener('click', () => {
 		carrito.push({ id, nombre, cantidad, color, tamaño });
 	}
 
-	// Reducir stock
-    producto_stock--;
-
 	//actualiza el stock en pantalla
     document.getElementById(`stock-actual`).textContent = producto_stock;
     //console.log(producto_stock)
 
 	notificacion.querySelector('img').src = `../img/thumbs/${color}.jpg`;
 	notificacion.classList.add('notificacion--active');
-	setTimeout(() => notificacion.classList.remove('notificacion--active'), 5000);
+	setTimeout(() => notificacion.classList.remove('notificacion--active'), 2000);
 	guardarCarrito();
 
 	// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -373,7 +395,7 @@ btnAgregarAlCarrito.addEventListener('click', () => {
 	console.log(productols)
 	if (productols && productols.stock[color] && productols.stock[color][tamaño] > 0) {
 		// 3. Reducir el stock
-		productols.stock[color][tamaño] -= 1;
+		productols.stock[color][tamaño] -= cantidad;
 		producto_stock=productols.stock[color][tamaño]
 		// Actualizar stock en la pantalla
 		//document.getElementById("stock-actual").innerText = producto.stock[color][tamaño];
@@ -436,6 +458,7 @@ ventanaCarrito.addEventListener('click', (e) => {
 
 btnComprar.addEventListener('click', () => {
 	alert('Enviado petición de compra:', carrito);
+	console.log(carrito)
 	carrito = [];
 	renderCarrito();
 

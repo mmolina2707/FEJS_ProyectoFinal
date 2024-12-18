@@ -465,6 +465,7 @@ header .logo {
 	gap: 20px;
 	
 }
+
 /* pendientes
 .carrito {
 	display:none
@@ -544,6 +545,10 @@ p.carrito__aviso-sin-productos {
 	gap: 10px;
 	color: #585858;
 	font-size: 14px;
+}
+
+.carrito__producto-propiedades span:last-child {
+    display: block;
 }
 
 .carrito__producto-contenedor-precio {
